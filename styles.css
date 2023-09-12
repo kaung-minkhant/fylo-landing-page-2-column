@@ -2,6 +2,7 @@
 
 .main {
     max-width: 1440px;
+    padding-top: 3rem;
 }
 
 
@@ -36,15 +37,15 @@ html {
     margin-top: 100px;
 }
 
-.link {
+.productive-section-link {
     text-decoration: none;
-    padding-bottom: 2px;
+    padding-bottom: 0.1rem;
     vertical-align:middle;
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid hsl(170, 45%, 43%);
     width: fit-content;
 }
 
-.link i {
+.productive-section-link i {
     vertical-align: middle;
     font-size: 1rem;
 }
@@ -61,8 +62,18 @@ html {
     width: 75%;
 }
 
-.productive-session {
+.productive-container {
+    background-color: hsl(240, 75%, 98%);
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+}
+
+.productive-section {
     width: 90%;
+}
+
+.productive-section a {
+    color: hsl(170, 45%, 43%);
 }
 
 .testimony {
@@ -75,7 +86,8 @@ html {
 }
 
 .early-access {
-    padding: 3rem 5rem;
+    padding: 5rem 5rem;
+    background-color: hsl(238, 22%, 44%);
 }
 
 .early-access-body {
@@ -94,6 +106,40 @@ html {
 
 .early-access-title {
     font-size: 1.5rem;
+}
+
+footer {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: hsl(243, 87%, 12%);
+}
+
+.footer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5rem 0;
+}
+
+.footer-logo {
+    margin-bottom: 1rem;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.footer-nav li {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.footer-social i {
+    margin-right: 1rem;
+    font-size: 2rem;
 }
 
 
@@ -128,11 +174,11 @@ html {
         width: 100%;
     }
 
-    .productive-session {
+    .productive-section {
         width: 95%;
     }
 
-    .link {
+    .productive-section-link {
         margin-left: auto;
         margin-right: auto;
     }
@@ -144,7 +190,7 @@ html {
     }
 
     .testimony-name, .testimony-position {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 
     .testimony-pic {
@@ -178,5 +224,21 @@ html {
     .early-access-btn {
         width: 100%;
         font-size: 1rem;
+    }
+
+    .footer {
+        width: 80%;
+    }
+
+    .footer-nav {
+        margin-top: 3rem;
+    }
+
+    .footer-social {
+        margin-top: 2rem;
+    }
+
+    .footer-nav ul {
+        padding: 0;
     }
 }
