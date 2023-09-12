@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+.main {
+    max-width: 1440px;
+}
+
+
+html {
+    font-size: 16px;
+}
+
+.headings, .heading-second,
+.call-to-action,
+.header-navigations {
+    font-family: 'Raleway', sans-serif;
+}
+
+.headings, .heading-second {
+    font-weight: 700;
+}
+
+.call-to-action,
+.header-navigations {
+    font-weight: 400;
+}
+
+.body, .body-second {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.graphic {
+    background-image: url("./images/bg-curve-desktop.svg");
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+}
+
+.link {
+    text-decoration: none;
+    padding-bottom: 2px;
+    vertical-align:middle;
+    border-bottom: 1px solid blue;
+    width: fit-content;
+}
+
+.link i {
+    vertical-align: middle;
+    font-size: 1rem;
+}
+
+.testimony-name, .testimony-position {
+    font-size: 0.8rem;
+}
+
+.card {
+    box-shadow: 0px 0px 7px -1px grey;
+}
+
+.body-second {
+    width: 75%;
+}
+
+.productive-session {
+    width: 90%;
+}
+
+.testimony {
+    width: 75%;
+}
+
+.testimony-pic {
+    width: 25%;
+    height: 25%;
+}
+
+.early-access {
+    padding: 3rem 5rem;
+}
+
+.early-access-body {
+    width: 50%;
+    padding-right: 4rem;
+}
+
+.early-access-input {
+    padding-left: 4rem;
+    width: 50%;
+}
+
+.early-access-btn {
+    width: 40%;
+}
+
+.early-access-title {
+    font-size: 1.5rem;
+}
+
+
+@media (max-width:800px) {
+    .main {
+        max-width: 375px;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .navbar-brand {
+        width: 25%;
+    }
+
+    .headings {
+        font-size: 1.5rem;
+    }
+
+    .heading-second {
+        font-size: 1.1rem;
+    }
+
+    .graphic {
+        background-image: url("./images/bg-curve-mobile.svg");
+        height: 50px;
+        margin-top: 70px;
+    }
+
+    .body-second {
+        width: 100%;
+    }
+
+    .productive-session {
+        width: 95%;
+    }
+
+    .link {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .testimony {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .testimony-name, .testimony-position {
+        font-size: 0.6rem;
+    }
+
+    .testimony-pic {
+        width: 15%;
+        height: 15%;
+    }
+
+    .testimony-test {
+        font-size: 1rem;
+    }
+
+    .early-access {
+        padding: 3rem 3rem;
+    }
+
+    .early-access-title {
+        font-size: 1.3rem;
+    }
+
+    .early-access-body {
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .early-access-input {
+        padding-left: 0rem;
+        width: 100%;
+    }
+
+    .early-access-btn {
+        width: 100%;
+        font-size: 1rem;
+    }
+}

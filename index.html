@@ -1,53 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  Features
-  Team
-  Sign In
+  <div class="main landing-page my-lg-3 mx-auto">
+    <header class="navbar navbar-expand-sm mb-5 mx-3">
+      <a href="#" class="navbar-brand">
+        <img class="image" src="./images/logo.svg" />
+      </a>
+      <ul class="navbar-nav ms-auto header-navigations">
+        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Team</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Sign In</a></li>
+      </ul>
+    </header>
 
-  All your files in one secure location, accessible anywhere.
+    <div class="d-flex align-items-center flex-column-reverse flex-md-row g-4 mx-auto" style="width: 90%">
+      <div>
+        <p class="headings h1 mb-4 mb-md-3 lh-base text-center text-md-start">All your files in one secure location,
+          accessible anywhere.</p>
+        <p class="body mb-4 mb-md-4 text-center text-md-start">Fylo stores your most important files in one secure
+          location.
+          Access them wherever you need, share and collaborate with friends,
+          family, and co-workers.</p>
 
-  Fylo stores your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family, and co-workers.
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <input type="text" class="form-control" placeholder="Enter your email" />
+          </div>
+          <div class="col-md-3 col-12 mt-3 mt-md-0">
+            <button class="call-to-action btn btn-primary w-100">Get Started</button>
+          </div>
+          <div class="col-md-3 d-none d-md-block"></div>
+        </div>
+      </div>
+      <div>
+        <img class="w-100 mb-3 mb-md-0" src="./images/illustration-1.svg" />
+      </div>
+    </div>
 
-  Get Started
+    <div class="graphic"></div>
+    <div class="my-3">
+      <div class="productive-session d-flex align-items-center flex-column-reverse flex-md-row g-4 mx-auto">
+        <div class="w-100">
+          <p class="heading-second h1 mb-4 mb-md-4 text-center text-md-start">Stay productive, wherever you are</p>
+          <p class="body body-second mb-md-3">Never let location be an issue when accessing your files. Fylo has you
+            covered for all of your file storage needs.</p>
+          <p class="body body-second mb-5 mb-md-3">Securely share files and folders with friends, family and colleagues for
+            live collaboration. No email attachments required!</p>
 
-  Stay productive, wherever you are
+          <a href="#" class="link d-block mb-5 mb-md-5">See how Fylo works
+            <i class="fas fa-circle-arrow-right ms-1"></i>
+          </a>
+          <div class="card testimony bg-light px-3 py-1">
+            <div class="card-body">
+              <img src="./images/icon-quotes.svg" />
+              <p class="body testimony-text">Fylo has improved our team productivity by an order of magnitude. Since
+  making the switch our team has become a well-oiled collaboration machine.</p>
+                <div class="d-flex align-items-center">
+                  <img class="testimony-pic rounded-circle me-2" src="./images/avatar-testimonial.jpg" />
+                  <div class="d-flex flex-column">
+                    <span class="headings testimony-name">Kyle Burton</span>
+                    <span class="body testimony-position">Founder & CEO, Huddle</span>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img class="w-100 mb-5 mb-md-0" src="./images/illustration-2.svg" />
+        </div>
+      </div>
+    </div>
 
-  Never let location be an issue when accessing your files. Fylo has you 
-  covered for all of your file storage needs.
+    <div class="bg-secondary mt-5 early-access d-flex align-items-center flex-column flex-md-row">
+      <div class="early-access-body">
+        <p class="headings early-access-title text-white">Get early access today</p>
+        <p class="text-white early-access-text">It only takes a minute to sign up and our free starter tier is extremely generous.
+          If you have any questions, our support team would be happy to help you.</p>
+      </div>
+      <div class="early-access-input d-flex flex-column">
+          <input class="form-control early-access-text" placeholder="email@example.com" type="email" />
+          <button class="btn btn-primary mt-2 early-access-btn headings">Get Started For Free</button>
+      </div>
+    </div>
+  </div>
 
-  Securely share files and folders with friends, family and colleagues for 
-  live collaboration. No email attachments required!
 
-  See how Fylo works
 
-  Fylo has improved our team productivity by an order of magnitude. Since 
-  making the switch our team has become a well-oiled collaboration machine.
 
-  Kyle Burton
-  Founder & CEO, Huddle
 
-  Get early access today
+  <!-- Get Started
 
-  It only takes a minute to sign up and our free starter tier is extremely generous. 
-  If you have any questions, our support team would be happy to help you.
+
+
+  
+
+  
+  
+
+  
+
+  
 
   Get Started For Free
 
@@ -61,13 +140,18 @@
 
   Contact Us
   Terms
-  Privacy
+  Privacy -->
 
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/706073cd13.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
