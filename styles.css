@@ -142,6 +142,9 @@ footer {
     font-size: 2rem;
 }
 
+.white-invalid {
+    color: white;
+}
 
 @media (max-width:800px) {
     .main {

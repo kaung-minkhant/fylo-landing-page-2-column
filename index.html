@@ -49,15 +49,19 @@
           Access them wherever you need, share and collaborate with friends,
           family, and co-workers.</p>
 
-        <div class="row">
+        <form class="row was-validated">
           <div class="col-md-6 col-12">
-            <input type="text" class="form-control" placeholder="Enter your email" />
+            <input type="text" class="form-control" placeholder="Enter your email" required/>
+            <div class="invalid-feedback">
+              Please check your email
+            </div>
           </div>
+         
           <div class="col-md-3 col-12 mt-3 mt-md-0">
-            <button class="call-to-action btn btn-primary w-100">Get Started</button>
+            <button type="submit" class="call-to-action btn btn-primary w-100">Get Started</button>
           </div>
           <div class="col-md-3 d-none d-md-block"></div>
-        </div>
+        </form>
       </div>
       <div>
         <img class="w-100 mb-3 mb-md-0" src="./images/illustration-1.svg" />
@@ -106,10 +110,13 @@
           generous.
           If you have any questions, our support team would be happy to help you.</p>
       </div>
-      <div class="early-access-input d-flex flex-column">
-        <input class="form-control early-access-text" placeholder="email@example.com" type="email" />
-        <button class="btn btn-primary mt-2 early-access-btn headings">Get Started For Free</button>
-      </div>
+      <form class="was-validated early-access-input d-flex flex-column">
+        <input class="form-control early-access-text" placeholder="email@example.com" type="email" required />
+        <div class="white-invalid invalid-feedback">
+          Please check your email
+        </div>
+        <button type="submit" class="btn btn-primary mt-2 early-access-btn headings">Get Started For Free</button>
+      </form>
     </div>
     <footer>
       <div class="footer">
